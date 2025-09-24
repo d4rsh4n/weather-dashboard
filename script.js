@@ -1,4 +1,4 @@
-const apiKey ="1ba4ad97343ab74986fa4cf1880af072"; // Your OpenWeatherMap API key
+const apiKey ="1ba4ad97343ab74986fa4cf1880af072";
 
 // Get weather by city name
 function getWeather() {
@@ -41,7 +41,7 @@ function displayWeather(data) {
   document.getElementById("weather").innerHTML = weatherHTML;
 }
 
-// Auto detect user location on page load
+// Auto detect user location
 window.onload = function() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
